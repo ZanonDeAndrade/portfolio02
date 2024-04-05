@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    var typed = new Typed(".typing", {
+        strings: ["desenvolvedor front-end"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
     $(window).scroll(function(){
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
@@ -11,26 +18,21 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
-     $('.scroll-up-btn').click(function(){
-         $('html').animate({scrollTop: 0});
-     });
 
-     var typed = new Typed(".typing", {
-         strings:["Estudante de Sistemas de Informação"],
-         typeSpeed:100,
-         backSpeed:60,
-         loop:true
-     });
+    $('.scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
+    });
 
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+
     $('.carousel').owlCarousel({
         margin:20,
         loop:true,
         autoplayTimeOut:2000,
-        autoplayHoverPauser:true,
+        autoplayHoverPause:true,
         responsive:{
             0:{
                 items:1,

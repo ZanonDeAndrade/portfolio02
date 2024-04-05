@@ -322,7 +322,6 @@ section .title::after{
 }
 
 
-
 /*  responsivo  */
 @media (max-width: 1300px){
     .navbar .max-width{
@@ -427,3 +426,4 @@ section .title::after{
         font-size: 27px;
     }
 }
+
